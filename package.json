@@ -1,0 +1,20 @@
+{
+  "name": "react-template",
+  "version": "1.0.0",
+  "description": "一个webpack的react模板，非脚手架搭建。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nosizi/react-template.git"
+  },
+  "keywords": [],
+  "author": "nosizi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nosizi/react-template/issues"
+  },
+  "homepage": "https://github.com/nosizi/react-template#readme"
+}
