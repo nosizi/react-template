@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/nosizi/react-template/issues"
   },
-  "homepage": "https://github.com/nosizi/react-template#readme"
+  "homepage": "https://github.com/nosizi/react-template#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
 }
