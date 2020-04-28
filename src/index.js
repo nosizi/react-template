@@ -1,15 +1,21 @@
 const greeting = 'just hi.'
 
+const [methodSayHi, methodSayName] = ['sayHi', 'sayName']
+
 class Person {
   constructor() {
     this.name = 'Coolman'
   }
 
-  sayHi() {
+  [methodSayHi]() {
     console.log(`${greeting}`)
   }
 
-  sayName() {
+  [methodSayName]() {
     console.log(`My name is ${this.name}`)
   }
 }
+
+const man = new Person()
+man.sayHi()
+man[methodSayName]()
