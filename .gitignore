@@ -1,7 +1,11 @@
+# NodeJS
 /node_modules
 
+# Output
 /dist
 
+# Webstorm config
 /.idea
 
+# VS Code config
 /.vscode
