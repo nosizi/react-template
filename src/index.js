@@ -26,7 +26,7 @@ const promise = new Promise((resolve, reject) => {
     if (arr.includes(2)) {
       resolve(true)
     } else {
-      reject()
+      reject(false)
     }
   }, 1000)
 })
