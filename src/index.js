@@ -3,7 +3,7 @@ const greeting = 'just hi.'
 const [methodSayHi, methodSayName] = ['sayHi', 'sayName']
 class Person {
   constructor() {
-    this.name = 'Coolman'
+    this.name = 'Cool Man'
   }
 
   [methodSayHi]() {
@@ -24,15 +24,15 @@ const arr = [1, 2, 3]
 const promise = new Promise((resolve, reject) => {
   setTimeout(() => {
     if (arr.includes(2)) {
-      resolve(true)
+      resolve('included')
     } else {
-      reject(false)
+      reject('not included')
     }
   }, 1000)
 })
 
 const asyncFunc = async function() {
-  const answer = await promise.then(res => res)
+  const answer = await promise.then(res => res, err => err)
   console.log(answer)
 }
 asyncFunc()
