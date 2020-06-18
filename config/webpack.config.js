@@ -26,11 +26,31 @@ module.exports = function (config) {
           test: /\.js$/,
           exclude: /node_modules/,
           include: path.resolve(__dirname, '../src'),
-          use: 'babel-loader'
+          loader: 'babel-loader'
         },
         {
           test: /\.css$/,
-          use: ['style-loader', 'css-loader']
+          use: [
+            'style-loader',
+            'css-loader',
+            {
+              loader: 'postcss-loader',
+              options: {
+                plugins: [
+                  require('autoprefixer')
+                ]
+              }
+            },
+            'sass-loader'
+          ]
+        },
+        {
+          test: /\.(png|jpe?g|gif|svg)$/,
+          loader: 'url-loader',
+          options: {
+            name: 'static/media/images/[name].[hash:8].[ext]',
+            limit: 8192
+          }
         }
       ]
     },
